@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REPORT CARD: Grading Policies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<style type="text/css"> 
+
+<!-- 
+ 
+ #navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #000; 
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #000; 
+	} 
+ 
+#navbar ul li a:hover { 
+	color: #000; 
+	background-color: #fff; 
+	} 
+ 
+--> 
+
+body {
+    font-size: 12px; /* Sets a base font size for the whole body */
+  }
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body
+<div id="navbar"> 
+  <ul> 
+        <li><a href="https://jmvukovi-creator.github.io/website-demo/grading.html">Grading Policies</a></li> 
+	<li><a href="https://jmvukovi-creator.github.io/website-demo/brc_table_grades_mbb.html">2025-26 Men's College Basketball Report Card</a></li> 
+	<li><a href="https://jmvukovi-creator.github.io/website-demo/wbb_table_grades_mbb.html">2025-26 Women's College Basketball Report Card</a></li>  
+  </ul> 
+</div> 
+</body> 
+
+<body>
+
+<p><strong>REPORT CARD: College basketball Grading Policies</strong></p
+<p></p>
+
+<table id="myTable">
+  <tr>
+    <th onclick="sortTable(0)">Grade Type</th>
+    <th onclick="sortTable(2)">Summary</th>
+  </tr>
+<tr>
+  <td> SOS Grade </td>
+  <td> Strength of (Course) Schedule: based on opponent's and opponent-opponent's grades </td>
+</tr>
+<tr>
+  <td> Efficiency Grade </td>
+  <td> Measure of efficiency in classroom on offense and defense weighted by SOS </td>
+ 
+</tr>
+<tr>
+  <td> Competitive Grade </td>
+  <td> Results only grade (sorta Pass/Fail measure but with SOS) not taking into account efficiency, quality of work, and power performance grades</td> 
+</tr>
+<tr>
+  <td>  Power Grade</td>
+  <td>  Measure of teams' margin of victories/losses in opponent tests (games) weighted by SOS.  Home classroom advantage worth 3 points.</td>
+</tr>
+<tr>
+  <td> Quality Grade </td>
+  <td> Quality of work measure in classroom taking into account team's quality wins, bad losses, road performance, and perfomance in conference  </td>
+  
+</tr>
+</table>
+<p>
+
+<table id="myTable">
+  <tr>
+    <th onclick="sortTable(0)">Grade</th>
+    <th onclick="sortTable(2)">Numerical range</th>
+  </tr>
+<tr>
+  <td> A+ </td>
+  <td> 97.5 or greater </td>
+</tr>
+<tr>
+  <td> A </td>
+  <td> 92.5 - 97.5 </td>
+</tr>
+<tr>
+  <td> A- </td>
+  <td> 90.0 - 92.5 </td> 
+</tr>
+<tr>
+  <td> B+ </td>
+  <td> 87.5 - 89.9 </td>
+</tr>
+<tr>
+  <td> B </td>
+  <td> 82.5 - 87.5 </td>
+</tr>
+<tr>
+  <td> B- </td>
+  <td> 80.0 - 82.5 </td> 
+</tr>
+<tr>
+  <td> C+ </td>
+  <td> 77.5 - 79.9 </td>
+</tr>
+<tr>
+  <td> C </td>
+  <td> 72.5 - 77.5 </td>
+</tr>
+<tr>
+  <td> C- </td>
+  <td> 70.0 - 72.5 </td> 
+</tr>
+</tr>
+<tr>
+  <td> D+ </td>
+  <td> 67.5 - 69.9 </td>
+</tr>
+<tr>
+  <td> D </td>
+  <td> 62.5 - 67.5 </td>
+</tr>
+<tr>
+  <td> D- </td>
+  <td> 60.0 - 62.5 </td> 
+</tr>
+<tr>
+  <td> F </td>
+  <td> below 60.0 </td> 
+</tr>
+</table>
+
+<p>
+<table id="myTable">
+  <tr>
+    <th onclick="sortTable(0)">Grade game</th>
+    <th onclick="sortTable(2)">Home classroom</th>
+   <th onclick="sortTable(2)">Away classroom</th>
+   <th onclick="sortTable(2)">Neutral classroom</th>
+
+  </tr>
+<tr>
+  <td> A </td>
+  <td> Class Rank 1 - 16</td>
+  <td> Class Rank 1 - 32</td>
+  <td> Class Rank 1 - 24</td>
+
+</tr>
+<tr>
+  <td> B </td>
+  <td> Class Rank 17 - 50</td>
+  <td> Class Rank 33 - 100</td>
+  <td> Class Rank 25 - 80</td>
+
+</tr>
+<tr>
+  <td> C </td>
+  <td> Class Rank 51 - 128</td>
+  <td> Class Rank 101 - 200</td>
+  <td> Class Rank 81 - 165</td>
+
+</tr>
+<tr>
+  <td> D </td>
+  <td> Class Rank 129 - 230</td>
+  <td> Class Rank 201 - 290</td>
+  <td> Class Rank 166 - 260</td>
+
+</tr>
+<tr>
+  <td> F </td>
+  <td> Class Rank below 230</td>
+  <td> Class Rank below 290</td>
+  <td> Class Rank below 260</td>
+
+</tr>
+
+</table>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
