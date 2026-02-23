@@ -8,37 +8,75 @@
   .container { width: 100%; }
   .sidebar { display: none; }
 }
-<!-- 
- 
- #navbar ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #fff; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #fff; 
-	} 
- 
---> 
+
+.navbar {
+  overflow: hidden;
+  background-color: #36AB78;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+-->
+
 
 body {
-    font-size: 12px; /* Sets a base font size for the whole body */
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 table {
   border-spacing: 0;
   width: 100%;
@@ -59,29 +97,45 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body
-<div id="navbar"> 
-  <ul> 
-    
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/index.html ">2025-26 Men's College Basketball Report Card</a></li> 
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">2025-26 Men's College Basketball Bracketology</a></li>  
-	<p>
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html">2025-26 Women's College Basketball Report Card</a></li>  
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">2025-26 Women's College Basketball Bracketology</a></li>
-	<p>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a></li>       
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a></li> 
-  </ul> 
-</div> 
-</body> 
 
-<body>
+
+<body style="background-color:white;">
+<img src="https://jmvukovi-creator.github.io/reportcard/brc_logo.png" alt="Description" width="500" height="75">
+<div class="navbar">
+  <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Men's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Women's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
 
 
 
 
 <p><strong>REPORT CARD: Womens College basketball bracketology </strong></p>
-<p>Last updated at: Sat Feb 21 19:02:13 UTC 2026</p>
+<p>Last updated at: Mon Feb 23 17:32:53 UTC 2026</p>
 <table>
 <tr>
  <td>  Seed </td>
@@ -94,8 +148,8 @@ tr:nth-child(even) {
 </tr>
 <tr>
  <td>  1 </td>
- <td>  UCLA </td>
  <td>  Connecticut </td>
+ <td>  UCLA </td>
  <td>  South_Carolina </td>
  <td>  Texas </td>
  <td>   </td>
@@ -104,14 +158,14 @@ tr:nth-child(even) {
  <td>  2 </td>
  <td>  LSU </td>
  <td>  Vanderbilt </td>
- <td>  Michigan </td>
  <td>  Iowa </td>
+ <td>  Michigan </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  3 </td>
- <td>  Duke </td>
  <td>  TCU </td>
+ <td>  Duke </td>
  <td>  Louisville </td>
  <td>  West_Virginia </td>
  <td>   </td>
@@ -119,121 +173,121 @@ tr:nth-child(even) {
 <tr>
  <td>  4 </td>
  <td>  Oklahoma </td>
- <td>  Mississippi </td>
  <td>  Ohio_St </td>
- <td>  Minnesota </td>
+ <td>  Maryland </td>
+ <td>  Michigan_St </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  5 </td>
- <td>  Baylor </td>
+ <td>  Minnesota </td>
+ <td>  Mississippi </td>
  <td>  Kentucky </td>
- <td>  Maryland </td>
- <td>  Texas_Tech </td>
+ <td>  Baylor </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  6 </td>
  <td>  Alabama </td>
  <td>  North_Carolina </td>
- <td>  Michigan_St </td>
- <td>  Tennessee </td>
+ <td>  USC </td>
+ <td>  Texas_Tech </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  7 </td>
- <td>  USC </td>
- <td>  Oregon </td>
  <td>  NC_State </td>
- <td>  Washington </td>
+ <td>  Tennessee </td>
+ <td>  Princeton </td>
+ <td>  Colorado </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  8 </td>
- <td>  Oklahoma_St </td>
+ <td>  Washington </td>
+ <td>  Oregon </td>
  <td>  Iowa_St </td>
- <td>  Princeton </td>
- <td>  Notre_Dame </td>
+ <td>  Oklahoma_St </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  9 </td>
- <td>  Colorado </td>
+ <td>  Nebraska </td>
  <td>  Georgia </td>
+ <td>  Notre_Dame </td>
  <td>  Villanova </td>
- <td>  Illinois </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  10 </td>
- <td>  Nebraska </td>
- <td>  Arizona_St </td>
+ <td>  Illinois </td>
  <td>  Rhode_Island </td>
+ <td>  Columbia </td>
  <td>  Syracuse </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  11 </td>
- <td>  Columbia </td>
- <td>  Mississippi_St </td>
+ <td>  Virginia </td>
  <td>  Richmond </td>
+ <td>  Arizona_St </td>
  <td>  Utah </td>
  <td>  Fairfield </td>
- <td>  S_Dakota_St </td>
+ <td>  Montana_St </td>
 <tr>
  <td>  12 </td>
+ <td>  S_Dakota_St </td>
  <td>  South_Florida </td>
- <td>  Montana_St </td>
- <td>  Troy </td>
- <td>  San_Diego_St </td>
+ <td>  James_Madison </td>
+ <td>  Gonzaga </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  13 </td>
- <td>  Gonzaga </td>
+ <td>  San_Diego_St </td>
  <td>  Murray_St </td>
  <td>  Ball_St </td>
- <td>  Louisiana_Tech </td>
+ <td>  Col_Charleston </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  14 </td>
+ <td>  Louisiana_Tech </td>
  <td>  McNeese_St </td>
- <td>  Col_Charleston </td>
  <td>  Vermont </td>
- <td>  WI_Green_Bay </td>
+ <td>  UC_Irvine </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  15 </td>
- <td>  UC_Irvine </td>
+ <td>  WI_Green_Bay </td>
  <td>  High_Point </td>
- <td>  Army </td>
- <td>  Lindenwood </td>
+ <td>  W_Illinois </td>
+ <td>  Jacksonville </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  16 </td>
- <td>  Jacksonville </td>
+ <td>  Army </td>
  <td>  Fairleigh_Dickinson </td>
- <td>  Abilene_Christian </td>
  <td>  Howard </td>
+ <td>  Abilene_Christian </td>
  <td>  Alabama_A&M </td>
  <td>  Wofford </td>
 <tr>
  <td>  First4OUT </td>
+ <td>  Clemson </td>
  <td>  Kansas_St </td>
- <td>  Virginia </td>
- <td>  Stanford </td>
  <td>  Virginia_Tech </td>
+ <td>  Mississippi_St </td>
  <td>   </td>
  <td>   </td>
 <tr>
  <td>  Next4OUT </td>
- <td>  BYU </td>
- <td>  George_Mason </td>
- <td>  Clemson </td>
+ <td>  Stanford </td>
  <td>  Kansas </td>
+ <td>  George_Mason </td>
+ <td>  BYU </td>
  <td>   </td>
  <td>   </td>
 </tr>

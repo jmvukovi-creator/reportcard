@@ -8,37 +8,75 @@
   .container { width: 100%; }
   .sidebar { display: none; }
 }
-<!-- 
- 
- #navbar ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #fff; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #fff; 
-	} 
- 
---> 
+
+.navbar {
+  overflow: hidden;
+  background-color: #36AB78;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+-->
+
 
 body {
-    font-size: 12px; /* Sets a base font size for the whole body */
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 table {
   border-spacing: 0;
   width: 100%;
@@ -59,29 +97,45 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body
-<div id="navbar"> 
-  <ul> 
-    
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/index.html ">2025-26 Men's College Basketball Report Card</a></li> 
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">2025-26 Men's College Basketball Bracketology</a></li>  
-	<p>
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html">2025-26 Women's College Basketball Report Card</a></li>  
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">2025-26 Women's College Basketball Bracketology</a></li>
-	<p>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a></li>       
-	<li><a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a></li> 
-  </ul> 
-</div> 
-</body> 
 
-<body>
+
+<body style="background-color:white;">
+<img src="https://jmvukovi-creator.github.io/reportcard/brc_logo.png" alt="Description" width="500" height="75">
+<div class="navbar">
+  <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Men's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Women's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
 
 
 
 
 <p><strong>REPORT CARD: Basketball Conference grades </strong></p>
-<p>Last updated at: Sat Feb 21 19:08:40 UTC 2026</p>
+<p>Last updated at: Mon Feb 23 17:33:24 UTC 2026</p>
 <table id="myTable">
 <tr>
  <th onclick="sortTable(0)">  Conference </th>
@@ -89,159 +143,159 @@ tr:nth-child(even) {
  <th onclick="sortTable(2)">  Womens Basketball Grade </th>
 </tr>
 <tr>
- <td>  SEC </td>
+ <td>  Big12 </td>
  <td>  89.298   </td>
- <td>  90.999   </td>
+ <td>  87.930   </td>
 </tr>
 <tr>
- <td>  Big12 </td>
- <td>  89.269   </td>
- <td>  87.929   </td>
+ <td>  SEC </td>
+ <td>  89.194   </td>
+ <td>  90.784   </td>
 </tr>
 <tr>
  <td>  ACC </td>
- <td>  87.820   </td>
- <td>  84.146   </td>
+ <td>  87.714   </td>
+ <td>  84.201   </td>
 </tr>
 <tr>
  <td>  Big10 </td>
- <td>  87.469   </td>
- <td>  89.277   </td>
+ <td>  87.331   </td>
+ <td>  89.365   </td>
 </tr>
 <tr>
  <td>  BigEast </td>
- <td>  85.956   </td>
- <td>  80.829   </td>
+ <td>  85.951   </td>
+ <td>  80.365   </td>
 </tr>
 <tr>
  <td>  MWC </td>
- <td>  80.576   </td>
- <td>  71.253   </td>
+ <td>  80.716   </td>
+ <td>  71.145   </td>
 </tr>
 <tr>
  <td>  A10 </td>
- <td>  79.387   </td>
- <td>  74.453   </td>
+ <td>  79.145   </td>
+ <td>  74.573   </td>
 </tr>
 <tr>
  <td>  WCC </td>
- <td>  75.529   </td>
- <td>  72.225   </td>
+ <td>  75.578   </td>
+ <td>  72.131   </td>
 </tr>
 <tr>
  <td>  Amer </td>
- <td>  74.876   </td>
- <td>  72.789   </td>
+ <td>  75.247   </td>
+ <td>  72.634   </td>
 </tr>
 <tr>
  <td>  MVC </td>
- <td>  74.006   </td>
- <td>  68.096   </td>
+ <td>  74.292   </td>
+ <td>  68.005   </td>
 </tr>
 <tr>
  <td>  WAC </td>
- <td>  72.075   </td>
- <td>  69.014   </td>
+ <td>  72.021   </td>
+ <td>  68.649   </td>
 </tr>
 <tr>
  <td>  Ivy </td>
- <td>  71.715   </td>
- <td>  78.209   </td>
-</tr>
-<tr>
- <td>  MAC </td>
- <td>  70.355   </td>
- <td>  71.136   </td>
-</tr>
-<tr>
- <td>  CAA </td>
- <td>  70.124   </td>
- <td>  65.774   </td>
+ <td>  71.551   </td>
+ <td>  78.543   </td>
 </tr>
 <tr>
  <td>  CUSA </td>
- <td>  69.663   </td>
- <td>  69.248   </td>
+ <td>  70.436   </td>
+ <td>  69.155   </td>
+</tr>
+<tr>
+ <td>  MAC </td>
+ <td>  70.248   </td>
+ <td>  70.965   </td>
+</tr>
+<tr>
+ <td>  CAA </td>
+ <td>  70.245   </td>
+ <td>  65.726   </td>
 </tr>
 <tr>
  <td>  BigWest </td>
- <td>  68.974   </td>
- <td>  67.134   </td>
+ <td>  68.910   </td>
+ <td>  67.055   </td>
 </tr>
 <tr>
  <td>  SunBelt </td>
- <td>  66.414   </td>
- <td>  73.046   </td>
-</tr>
-<tr>
- <td>  MAAC </td>
- <td>  65.586   </td>
- <td>  63.157   </td>
+ <td>  66.736   </td>
+ <td>  73.045   </td>
 </tr>
 <tr>
  <td>  Southland </td>
- <td>  65.151   </td>
- <td>  65.527   </td>
-</tr>
-<tr>
- <td>  BSky </td>
- <td>  65.515   </td>
- <td>  67.918   </td>
+ <td>  65.033   </td>
+ <td>  65.511   </td>
 </tr>
 <tr>
  <td>  BigSouth </td>
- <td>  65.431   </td>
- <td>  62.795   </td>
+ <td>  65.296   </td>
+ <td>  62.905   </td>
+</tr>
+<tr>
+ <td>  MAAC </td>
+ <td>  65.294   </td>
+ <td>  63.256   </td>
 </tr>
 <tr>
  <td>  Horizon </td>
- <td>  65.288   </td>
- <td>  65.970   </td>
+ <td>  64.993   </td>
+ <td>  65.985   </td>
 </tr>
 <tr>
  <td>  SthrnC </td>
- <td>  64.579   </td>
- <td>  64.084   </td>
+ <td>  64.892   </td>
+ <td>  64.544   </td>
+</tr>
+<tr>
+ <td>  BSky </td>
+ <td>  64.757   </td>
+ <td>  68.131   </td>
 </tr>
 <tr>
  <td>  ASun </td>
- <td>  64.284   </td>
- <td>  67.834   </td>
+ <td>  64.216   </td>
+ <td>  68.197   </td>
 </tr>
 <tr>
  <td>  Summit </td>
- <td>  63.396   </td>
- <td>  68.515   </td>
+ <td>  63.155   </td>
+ <td>  68.771   </td>
 </tr>
 <tr>
  <td>  OVC </td>
- <td>  62.185   </td>
- <td>  67.453   </td>
+ <td>  62.139   </td>
+ <td>  67.540   </td>
 </tr>
 <tr>
  <td>  Patriot </td>
- <td>  60.183   </td>
- <td>  66.328   </td>
+ <td>  60.563   </td>
+ <td>  66.084   </td>
 </tr>
 <tr>
  <td>  AmEast </td>
- <td>  59.909   </td>
- <td>  71.987   </td>
+ <td>  60.037   </td>
+ <td>  72.396   </td>
 </tr>
 <tr>
  <td>  SWAC </td>
- <td>  59.340   </td>
- <td>  60.574   </td>
+ <td>  59.557   </td>
+ <td>  60.628   </td>
 </tr>
 <tr>
  <td>  NEC </td>
- <td>  58.953   </td>
- <td>  58.584   </td>
+ <td>  58.558   </td>
+ <td>  58.314   </td>
 </tr>
 <tr>
  <td>  MEAC </td>
- <td>  56.767   </td>
- <td>  60.823   </td>
+ <td>  56.924   </td>
+ <td>  60.797   </td>
 </tr>
 </tr>
 </table>
