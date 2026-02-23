@@ -8,37 +8,69 @@
   .container { width: 100%; }
   .sidebar { display: none; }
 }
-<!-- 
- 
- #navbar ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #fff; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #fff; 
-	} 
- 
---> 
+.navbar {
+  overflow: hidden;
+  background-color: #36AB78;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+-->
+
 
 body {
-    font-size: 12px; /* Sets a base font size for the whole body */
-  }
+  font-family: Arial, Helvetica, sans-serif;
+}
 table {
   border-spacing: 0;
   width: 100%;
@@ -59,22 +91,37 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body
-<div id="navbar"> 
-  <ul>
 
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/index.html ">2025-26 Men's College Basketball Report Card</a></li>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">2025-26 Men's College Basketball Bracketology</a></li>
-        <p>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html">2025-26 Women's College Basketball Report Card</a></li>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">2025-26 Women's College Basketball Bracketology</a></li>
-        <p>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a></li>
-        <li><a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a></li>
-  </ul>
+<body style="background-color:white;">
+<img src="https://jmvukovi-creator.github.io/reportcard/brc_logo.png" alt="Description" width="500" height="75">
+<div class="navbar">
+  <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Men's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/index.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/mbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Women's Basketball
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_table_grades_mbb.html ">Report Card Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/wbb_bracketology.html ">Bracketology</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/bb_conf_grades.html">Conference Grades</a>
+      <a href="https://jmvukovi-creator.github.io/reportcard/grading.html">Grading Policies</a>
+    </div>
+  </div>
 
-</div> 
-</body> 
+</div>
+
+</body>
 
 <body>
 
